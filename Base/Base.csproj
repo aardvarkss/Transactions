@@ -39,9 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainModels\PurchaseOrder.cs" />
+    <Compile Include="DomainModels\PurchaseOrderLine.cs" />
     <Compile Include="DomainModels\SalesOrder.cs" />
     <Compile Include="DomainModels\SalesOrderLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrderFactory.cs" />
     <Compile Include="SalesOrderFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
