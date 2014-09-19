@@ -16,5 +16,16 @@ namespace Base
 
             return s;
         }
+
+        public SalesOrderLine addSalesOrderLine(int qty, string prod, SalesOrder s)
+        {
+            SalesOrderLine sol = new SalesOrderLine();
+            sol.ProductCode = prod;
+            sol.Quantity = qty;
+            s.addLine(sol);
+
+            return sol;
+
+        }
     }
 }
